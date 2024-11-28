@@ -1,0 +1,51 @@
+.project-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+  
+  .card-img-wrapper {
+    position: relative;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover .card-img-top {
+    transform: scale(1.1); /* Slight zoom effect on image */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .project-card:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .arrow {
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .card-body {
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Keep card content above the overlay */
+  }
+  
