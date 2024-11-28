@@ -22,7 +22,7 @@ const Home = () => {
           </div>
           <div className="image-section">
             <img
-              src="../eagle.jpg"
+              src="../picture.png"
               alt="Profile"
               className="rounded-circle img-fluid"
               style={{ width: "250px", height: "250px", objectFit: "cover" }}
